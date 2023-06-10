@@ -41,3 +41,10 @@ url=https://github.com/artetxem/vecmap.git
 if cd $repo; then git pull; else git clone $url $repo; fi
 
 cd $home_dir
+
+# clone or pull Panlex-Lexicon-Extractor
+repo=lafand-mt
+url=https://github.com/abumafrim/lafand-mt.git
+if cd $repo; then git pull; else git clone $url $repo; fi
+
+cd $home_dir

@@ -288,7 +288,7 @@ def main():
 
     # read monolingual text file
     with open(os.path.join(args.files_dir, filename), 'r') as f:
-      files[filename] = [remove_punct(l) for l in f.read().splitlines() if l != '']})
+      files[filename] = [remove_punct(l) for l in f.read().splitlines() if l != '']
 
     if n + 1 == max_files:
       break
