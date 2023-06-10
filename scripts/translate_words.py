@@ -179,9 +179,14 @@ def translate_sentences(files, src_embeddings, trg_embeddings, transliterations_
   elif precision == 'fp64':
     dtype = 'float64'
 
-  #if not os.path.isdir(output):
-  #  os.makedirs(output)
-  #  print('creating output directory: done')
+  if not os.path.isdir(output_path):
+    try:
+      os.makedirs(output_path)
+      print('creating output directory: done')
+    except:
+      print('failed to create output directory: %s' % output_path)
+      sys.exit(-1)
+
 
   # Read input embeddings
   srcfile = open(src_embeddings, encoding=encoding, errors='surrogateescape')

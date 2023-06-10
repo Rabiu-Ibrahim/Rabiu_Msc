@@ -1,0 +1,11 @@
+python3 translate_words.py \
+  --src_embeddings= \
+  --trg_embeddings= \
+  --src_lang=en \
+  --trg_lang=ha \
+  -f \
+  -t \
+  -o \
+  --max_files= \
+  --retrieval= \
+  --dot
